@@ -1,0 +1,179 @@
+{
+	"name": "Chapter 1",
+	"questions": {
+		"direction": {
+			"prelude": "Я смог! У меня получилось! Я больше не школьник! Я теперь студент! Да и не просто студент, а студент МИЭМа. Это именно тот универ, в который я хотел поступить!",
+			"answers": [
+				  { 
+						"answer": "Далее",
+						"next": "introduction"
+				  }
+				]
+		},
+		"introduction": {
+			"prelude": "Вступление",
+			"answers": [
+				  { 
+						"answer": "Далее",
+						"next": "day1-1",
+						"set" : "game['stats']['neighborhood-inspected'] = True"
+				  }
+				]
+		},
+		"day1-1": {
+			"prelude": "Первая лекция по БЖД",
+			"answers": [
+				  { 
+						"answer": "Далее",
+						"next": "day1-2"
+				  }
+				]
+		},
+		"day1-2": {
+			"prelude": "Первый выбор",
+			"answers": [
+				  { 
+						"answer": "Пойти за читательским",
+						"next": "day1-3-readCard-1"
+				  },
+					{ 
+						"answer": "Заказать карту москвича",
+						"next": "day1-3-mockowCard-1"
+				  },
+					{ 
+						"answer": "Попробывать познакомиться с одногруппниками",
+						"next": "day1-3-groupmates-1"
+				  },
+					{ 
+						"answer": "Пойти домой",
+						"next": "day2-1"
+				  }
+				]
+		},
+		"day1-3-readCard-1": {
+			"prelude": "Оформление читательского билета, выдача учебников на первое полугодие",
+			"answers": [
+				  { 
+						"answer": "Пойти домой",
+						"next": "day2-1"
+				  }
+				]
+		},
+		"day1-3-mockowCard-1": {
+			"prelude": "Подача заявления на получение социальной карты москвича",
+			"answers": [
+				  { 
+						"answer": "Пойти домой",
+						"next": "day2-1"
+				  }
+				]
+		},
+		"day1-3-groupmates-1": {
+			"prelude": "Знакомство с одногруппниками",
+			"answers": [
+				  { 
+						"answer": "Пойти домой",
+						"next": "day2-1"
+				  }
+				]
+		},
+		"day2-1": {
+			"prelude": "День второй-начало",
+			"answers": [
+				  { 
+						"answer": "Поехать на пары",
+						"next": "day2-2"
+				  }
+				]
+		},
+		"day2-2": {
+			"prelude": "Лекции по бжд",
+			"answers": [
+				  { 
+						"answer": "Пойти на семинар по бжд",
+						"next": "day2-3"
+				  }
+				]
+		},
+		"day2-3": {
+			"prelude": "Семинар по бжд",
+			"answers": [
+				  { 
+						"answer": "Пойти гулять с одногруппниками",
+						"next": "day2-4-walkWithMates-1-1"
+				  },
+					{ 
+						"answer": "Пойти изучить окрестности",
+						"next": "day2-4-neighborhood-1"
+				  },
+					{ 
+						"answer": "Пойти домой",
+						"next": "day3-1"
+				  }
+				]
+		},
+		"day2-4-walkWithMates-1-1": {
+			"prelude": "Прогулка с одногруппниками-1",
+			"answers": [
+				  { 
+						"answer": "Пойти домой",
+						"next": "day3-1"
+				  }
+				]
+		},
+		"day2-4-neighborhood-1": {
+			"prelude": "Изучение окрестностей",
+			"answers": [
+				  { 
+						"answer": "Продолжить",
+						"next": "day2-4-neighborhood-2"
+				  },
+					{ 
+						"answer": "Пойти домой",
+						"next": "day3-1"
+				  }
+				]
+		},
+		"day2-4-neighborhood-2": {
+			"prelude": "Изучение окрестностей-2",
+			"answers": [
+					{ 
+						"answer": "Поприветствовать",
+						"next": "day2-4-walkWithMates-1-2"
+				  },
+					{ 
+						"answer": "Избежать встречи с одногрупниками",
+						"next": "day2-4-neighborhood-3"
+				  }
+				]
+		},
+		"day2-4-walkWithMates-1-2": {
+			"prelude": "Прогулка с одногруппниками-1-2",
+			"answers": [
+				  { 
+						"answer": "Пойти домой",
+						"next": "day3-1"
+				  }
+				]
+		},
+		"day2-4-neighborhood-3": {
+			"prelude": "Изучение окрестностей-3",
+			"answers": [
+				  { 
+						"answer": "Пойти домой",
+						"next": "day3-1",
+						"set" : "game['stats']['neighborhood-inspected']=true"
+				  }
+				]
+		},
+		"day3-1": {
+			"prelude": "Начало фарма",
+			"answers": [
+				  { 
+						"answer": "Пойти домой",
+						"next": "day3-1"
+				  }
+				]
+		}
+	}
+}
